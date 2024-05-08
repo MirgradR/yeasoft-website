@@ -1,0 +1,29 @@
+.partners {
+    min-height: 170px;
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+    background-color: #1B1B1B;
+    border: 1px solid #262626;
+    font-weight: 500;
+    line-height: 23px;
+    text-align: center;
+    position: relative;
+}
+
+.partners p {
+    position: absolute;
+    top: -40px;
+    border: 1px solid #262626;
+    padding: 20px;
+    max-width: 286px;
+    border-radius: 100px;
+    background-color: #191919;
+    font-size: 18px;
+}
+
+.partners img {
+    padding: 20px;
+}

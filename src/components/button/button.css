@@ -1,0 +1,23 @@
+.button {
+    font-size: 18px;
+    border-radius: 10px;
+    font-weight: 500;
+    line-height: 24px;
+    border: 1px solid #333333;
+    cursor: pointer;
+}
+
+
+.button-green {
+    grid-area: b;
+    color: #262626;
+    padding: 16px 24px;
+    background-color: #9EFF00;
+}
+
+.button-grey {
+    color: #262626;
+    padding: 16px 24px;
+    background-color: #1D1D1B;
+    color: #ffffff;
+}

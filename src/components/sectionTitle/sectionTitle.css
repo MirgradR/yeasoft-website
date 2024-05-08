@@ -1,0 +1,46 @@
+.section-wrapper {
+    display: flex;
+    flex-direction: column;
+    background-image: url('/public/images/bg2.png');
+    background-position: center;
+    background-size: cover;
+    min-height: 336px;
+    gap: 14px;
+    position: relative;
+    padding: 150px 20px;
+}
+
+.section-wrapper::before {
+    position: absolute;
+    content: "";
+    inset: 0;
+    background-color: rgba(4, 15, 1, 0.785);
+}
+
+.section-wrapper::after {
+    position: absolute;
+    content: "";
+    background-image: url('/public/images/bgIcon.png');
+    background-repeat: repeat;
+    inset: 0;
+}
+
+
+
+.section-wrapper h1 {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 57px;
+    max-width: 996px;
+    position: relative;
+    z-index: 1;
+}
+
+.section-wrapper p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    position: relative;
+    z-index: 1;
+    max-width: 996px;
+}
