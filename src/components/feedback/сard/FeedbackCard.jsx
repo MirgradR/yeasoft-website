@@ -6,7 +6,7 @@ function FeedbackCard({ img, title, paragraph, name, profession }) {
     <div className='clients__feedback'>
       <h3>{title}</h3>
       <p>{paragraph}</p>
-      <div className='clients__card'>
+      <div className='clients__data'>
         <img className='clients__photo' src={img} />
         <div>
           <p className='clients__name'>{name}</p>
