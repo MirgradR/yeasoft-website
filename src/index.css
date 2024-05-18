@@ -1,0 +1,17 @@
+* {
+    margin: 0 auto;
+    padding: 0 auto;
+    text-decoration: none;
+    box-sizing: border-box;
+    color: #ffffff;
+    font-family: "Barlow", sans-serif;
+}
+
+body {
+    background-color: #191919;
+}
+
+#root {
+    max-width: 1600px;
+    margin: 20px auto;
+}

@@ -1,0 +1,37 @@
+.profession-card {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 18px;
+    min-width: 532px;
+    font-weight: 400;
+}
+
+.card {
+    padding: 50px;
+    max-width: 532px;
+    height: 577px;
+    position: relative;
+    border: 1px solid #333333;
+}
+
+.profession-card img {
+    width: 88px;
+    height: 88px;
+    margin-bottom: 40px;
+}
+
+.profession-card h3 {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 45px;
+    margin-bottom: 20px;
+}
+
+.profession-card__button {
+    width: 432px;
+    min-height: 60px;
+    padding: 18px 16px;
+    background-color: #262626;
+    position: absolute;
+    bottom: 50px;
+}
