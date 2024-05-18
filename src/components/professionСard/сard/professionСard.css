@@ -2,36 +2,54 @@
     display: flex;
     flex-wrap: wrap;
     font-size: 18px;
-    min-width: 532px;
+    min-width: 320px;
     font-weight: 400;
+    min-height: 577px;
+}
+
+.profession-card>div {
+    width: clamp(320px, 33.3%, 533.3px);
 }
 
 .card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
     padding: 50px;
-    max-width: 532px;
-    height: 577px;
-    position: relative;
+    height: 100%;
     border: 1px solid #333333;
 }
 
 .profession-card img {
     width: 88px;
     height: 88px;
-    margin-bottom: 40px;
+    margin: 0;
 }
 
 .profession-card h3 {
     font-size: 30px;
     font-weight: 600;
     line-height: 45px;
-    margin-bottom: 20px;
+    margin: 0;
 }
 
 .profession-card__button {
-    width: 432px;
+    width: 100%;
     min-height: 60px;
     padding: 18px 16px;
     background-color: #262626;
-    position: absolute;
-    bottom: 50px;
+    margin-top: auto;
+
+}
+
+@media(max-width: 1200px) {
+    .profession-card {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .profession-card>div {
+        width: 100%;
+    }
 }

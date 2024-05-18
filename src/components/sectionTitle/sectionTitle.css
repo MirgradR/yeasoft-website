@@ -1,11 +1,13 @@
 .section-wrapper {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     background-image: url('/public/images/bg2.png');
     background-position: center;
     background-size: cover;
-    min-height: 336px;
-    gap: 14px;
+    height: clamp(270px, 10rem + 11vw, 366px);
+    min-width: 320px;
+    gap: 30px;
     position: relative;
     padding: 150px 20px;
 }
@@ -25,10 +27,8 @@
     inset: 0;
 }
 
-
-
 .section-wrapper h1 {
-    font-size: 48px;
+    font-size: clamp(32px, 0.333rem + 2.667vw, 48px);
     font-weight: 600;
     line-height: 57px;
     max-width: 996px;
@@ -37,8 +37,8 @@
 }
 
 .section-wrapper p {
-    font-size: 18px;
-    font-weight: 400;
+    font-size: clamp(16px, 0.167rem + 1.333vw, 24px);
+    font-weight: 300;
     line-height: 24px;
     position: relative;
     z-index: 1;

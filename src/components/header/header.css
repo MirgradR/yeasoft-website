@@ -1,8 +1,9 @@
 .header {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr) ;
     grid-template-rows: 100px;
     grid-template-areas: "l n b";
+    justify-content: space-between;
     align-items: center;
     line-height: 1;
     font-weight: 500;
@@ -16,7 +17,7 @@
     grid-area: n;
     display: flex;
     justify-content: center;
-    max-width: 600px;
+    width: 550px;
     min-height: 55px;
     flex-wrap: wrap;
     align-items: center;
@@ -31,4 +32,54 @@
 .header__nav a:hover {
     background-color: #262626;
     border-radius: 8px;
+}
+
+.burger-menu {
+    display: none;
+}
+
+@media (max-width: 900px) {
+    .header {
+        display: flex;
+        position: relative;
+        height: 100px;
+    }
+
+    .header__nav {
+        display: none;
+    }
+
+    .burger__nav {
+        width: 250px;
+        display: none;
+        position: absolute;
+        top: 80px;
+        right: 16px;
+        flex-direction: column;
+        background-color: #191919;
+        z-index: 2;
+    }
+    
+
+    .burger__nav a {
+        border: 1px solid #262626 ;
+        width: 100%;
+    }
+
+    .header__logo {
+        position: absolute;
+        left: 16px;
+    }
+
+    .burger-menu {
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        right: 16px;
+    }
+
+    
+    .header .button.button-green {
+        display: none;
+    }
 }
