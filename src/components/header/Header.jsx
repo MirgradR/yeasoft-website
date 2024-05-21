@@ -10,9 +10,6 @@ function Header() {
     setIsMenuOpen(!isMenuOpen)
   }
 
-  const styleMenu = {
-    display: isMenuOpen ? 'flex' : 'none'
-  };
 
   return (
     <header className="header">
@@ -20,7 +17,7 @@ function Header() {
         <img src="/public/images/Logo.svg" alt="logo Yeasoft"></img>
       </a>
 
-      <nav className='header__nav burger__nav' style={styleMenu}>
+      <nav className={`header__nav ${!isMenuOpen ? '' : 'burger__nav'}`}>
         <a href="/">Home</a>
         <a href="/">Services</a>
         <a href="/">Work</a>
