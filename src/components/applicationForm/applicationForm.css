@@ -1,0 +1,145 @@
+.application-form {
+    width: clamp(20rem, 8.4375rem + 57.8125vw, 66.25rem);
+    padding-top: 80px;
+    padding-bottom: 80px;
+    border: 2px solid #24242480;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 33px;
+}
+
+.application-form input::placeholder {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+}
+
+
+.application-form input, .message__text {
+    margin-top: 20px;
+    width: 100%;
+    font-size: 18px;
+    color: inherit;
+    border: none;
+    border-bottom: 1px solid #333333;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+    outline: none;
+}
+
+.application-form>.button {
+    width: 145px;
+}
+
+.wrap-block {
+    width: clamp(320px, 100%, 900px);
+    padding: 40px 40px 40px;
+    border-radius: 12px;
+    border: 1px solid #333333;
+    background-color: #24242480;
+}
+
+.user-data {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.user-data__name,
+.user-data__email {
+    background-color: #24242480;
+    width: clamp(19.875rem, 40%, 26.875rem);
+    padding: 24px 40px;
+    cursor: pointer;
+    border-radius: 8px;
+    border: 1px solid #333333;
+}
+
+.user-data p {
+    cursor: pointer;
+}
+
+.inquiry-reason {
+    padding-bottom: 20px;
+}
+
+.inquiry-reason__title {
+    padding-bottom: 40px;
+}
+
+
+.inquiry-reason__checkbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+}
+
+.inquiry-reason__checkbox label {
+    flex-basis: calc(50% - 10px);
+    margin-bottom: 24px;
+    margin-right: 10px;
+}
+
+.inquiry-reason__checkbox {
+    input[type="checkbox"].custom-checkbox {
+        display: none;
+
+        +label {
+            position: relative;
+            padding-left: 46px;
+            cursor: pointer;
+
+            &:before {
+                content: "";
+                position: absolute;
+                width: 28px;
+                height: 28px;
+                left: 0;
+                border: 1px solid #333;
+                border-radius: 4px;
+                background-color: #262626;
+            }
+        }
+
+        &:checked {
+            +label:after {
+                content: "";
+                position: absolute;
+                left: 10px;
+                top: 5px;
+                width: 8px;
+                height: 13px;
+                border: solid #9EFF00;
+                border-width: 0 1px 1px 0;
+                transform: rotate(45deg);
+            }
+        }
+    }
+}
+
+.budget>span {
+    display: block;
+    margin-top: 14px;
+    margin-bottom: 30px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.budget__range {
+    width: 100%;
+    border: 3px solid #333333;
+}
+
+.message__text {
+    cursor: auto;
+    resize: vertical;
+    min-height: 70px;
+    max-height: 200px;
+}

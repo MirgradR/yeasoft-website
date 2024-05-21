@@ -5,11 +5,10 @@
     background-image: url('/public/images/bg2.png');
     background-position: center;
     background-size: cover;
-    height: clamp(270px, 10rem + 11vw, 366px);
     min-width: 320px;
     gap: 30px;
     position: relative;
-    padding: 150px 20px;
+    padding: 120px 20px;
 }
 
 .section-wrapper::before {
@@ -43,4 +42,5 @@
     position: relative;
     z-index: 1;
     max-width: 996px;
+    text-align: center;
 }
