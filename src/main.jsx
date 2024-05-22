@@ -8,6 +8,7 @@ import Feedback from './components/feedback/Feedback'
 import Questions from './components/questions/Questions'
 import ApplicationTitle from './components/applicationTitle/ApplicationTitle'
 import ApplicationForm from './components/applicationForm/ApplicationForm'
+import Footer from './components/footer/Footer'
 
 
 
@@ -27,6 +28,7 @@ function Main() {
       <Questions />
       <ApplicationTitle />
       <ApplicationForm />
+      <Footer />
     </>
   )
 }

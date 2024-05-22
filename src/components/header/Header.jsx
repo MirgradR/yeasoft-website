@@ -7,7 +7,7 @@ function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleClick = () => {
-    setIsMenuOpen(!isMenuOpen)
+    setIsMenuOpen((prev) => !prev)
   }
 
 
@@ -17,7 +17,7 @@ function Header() {
         <img src="/public/images/Logo.svg" alt="logo Yeasoft"></img>
       </a>
 
-      <nav className={`header__nav ${!isMenuOpen ? '' : 'burger__nav'}`}>
+      <nav className={`nav ${!isMenuOpen ? '' : 'burger__nav'}`}>
         <a href="/">Home</a>
         <a href="/">Services</a>
         <a href="/">Work</a>

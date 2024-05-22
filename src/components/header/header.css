@@ -13,23 +13,22 @@
     grid-area: l;
 }
 
-.header__nav {
+.nav {
     grid-area: n;
     display: flex;
     justify-content: center;
-    width: 550px;
     min-height: 55px;
     flex-wrap: wrap;
     align-items: center;
 }
 
-.header__nav a {
+.nav a {
     font-size: 18px;
     text-align: center;
     padding: 14px 15px;
 }
 
-.header__nav a:hover {
+.nav a:hover {
     background-color: #262626;
     border-radius: 8px;
 }
@@ -45,7 +44,7 @@
         height: 100px;
     }
 
-    .header__nav {
+    .nav {
         display: none;
     }
 
